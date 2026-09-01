@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e915bd8fc7dc0f49b418d876f540094, type: 3}
+  m_Name: Healing_Potion
+  m_EditorClassIdentifier: Assembly-CSharp::KAM.Inventory.PotionData
+  itemId: healing_potion
+  itemName: Healing Potion
+  description: A basic potion that restores health.
+  icon: {fileID: 0}
+  itemType: 1
+  rarity: 0
+  maxStackSize: 10
+  isConsumable: 1
+  isDroppable: 1
+  isSellable: 1
+  sellValue: 1
+  pickupSound: {fileID: 0}
+  useSound: {fileID: 0}
+  effectType: 0
+  effectValue: 30
+  effectDuration: 0
+  requiresBonusAction: 1
+  cooldownTurns: 0
+  recipe: []
+  recipeKnown: 1
+  potionColor: {r: 1, g: 0, b: 0, a: 1}
+  useEffect: {fileID: 0}

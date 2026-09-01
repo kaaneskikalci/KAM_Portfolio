@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de5519bd594c79a4fa664c38e7be13d9, type: 3}
+  m_Name: Wolf_Fang_Talisman
+  m_EditorClassIdentifier: Assembly-CSharp::KAM.Inventory.TalismanData
+  itemId: wolf_fang_talisman
+  itemName: Wolf Fang Talisman
+  description: A talisman crafted from a spirit wolf's fang. Increases critical hit
+    chance.
+  icon: {fileID: 21300000, guid: 2f4022187f528034599160fdcd986371, type: 3}
+  itemType: 2
+  rarity: 1
+  maxStackSize: 1
+  isConsumable: 0
+  isDroppable: 1
+  isSellable: 1
+  sellValue: 1
+  pickupSound: {fileID: 0}
+  useSound: {fileID: 0}
+  statModifiers:
+  - statType: 4
+    modifierType: 1
+    value: 10
+  specialEffect: 0
+  specialEffectValue: 0
+  equipSlot: 0
+  isUnique: 0
+  requiredLevel: 1
+  requiredSkillId: 

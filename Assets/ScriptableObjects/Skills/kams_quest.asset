@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd80cd6bcc6a7249a76ecb90215621f, type: 3}
+  m_Name: kams_quest
+  m_EditorClassIdentifier: Assembly-CSharp::KAM.Progression.SkillNode
+  skillId: kams_quest
+  skillName: Kam's Quest (Ultimate)
+  description: 50 successful hits fills ultimate bar. Choose between two devastating
+    ultimates.
+  icon: {fileID: 0}
+  category: 3
+  spiritFragmentCost: 100
+  prerequisites:
+  - {fileID: 11400000, guid: 3bd1aabe719e5994f8ec75b2ff8d68c5, type: 2}
+  - {fileID: 11400000, guid: 636db7077c4253048a8717b491c702d6, type: 2}
+  hasBranches: 1
+  branchA:
+    branchName: Ilgen's Eye
+    description: All enemies take +100% damage
+    icon: {fileID: 0}
+    effectType: 16
+    effectValue: 1
+  branchB:
+    branchName: Erlik's Last Effort
+    description: +50% damage but -10% HP per turn for 5 turns
+    icon: {fileID: 0}
+    effectType: 17
+    effectValue: 0.5
+  effectType: 0
+  effectValue: 0
+  secondaryValue: 0
+  tier: 4
+  uiPosition: {x: 800, y: 0}

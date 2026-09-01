@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd80cd6bcc6a7249a76ecb90215621f, type: 3}
+  m_Name: umay_favorite
+  m_EditorClassIdentifier: Assembly-CSharp::KAM.Progression.SkillNode
+  skillId: umay_favorite
+  skillName: Umay Ana's Favorite
+  description: 25% chance to fire a second beam at 30% damage after basic attack.
+  icon: {fileID: 0}
+  category: 0
+  spiritFragmentCost: 50
+  prerequisites:
+  - {fileID: 11400000, guid: 44793e0ed0d3a084981aa0d1009668a0, type: 2}
+  hasBranches: 1
+  branchA:
+    branchName: Choose Target
+    description: Choose the target for the second beam
+    icon: {fileID: 0}
+    effectType: 5
+    effectValue: 1
+  branchB:
+    branchName: Vine Slow
+    description: Second beam applies 30% speed slow for 1 turn
+    icon: {fileID: 0}
+    effectType: 6
+    effectValue: 0.3
+  effectType: 4
+  effectValue: 0.25
+  secondaryValue: 0.3
+  tier: 1
+  uiPosition: {x: 200, y: 0}

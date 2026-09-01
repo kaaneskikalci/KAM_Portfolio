@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ee05229162b07d45aefcf0e92d53245, type: 3}
+  m_Name: Spirit_Fragment
+  m_EditorClassIdentifier: Assembly-CSharp::KAM.Inventory.ItemData
+  itemId: spirit_fragment
+  itemName: Spirit Fragment
+  description: Crystallized spirit energy. Used to unlock skills in the Skill Tree.
+  icon: {fileID: 0}
+  itemType: 3
+  rarity: 2
+  maxStackSize: 9999
+  isConsumable: 0
+  isDroppable: 0
+  isSellable: 0
+  sellValue: 1
+  pickupSound: {fileID: 0}
+  useSound: {fileID: 0}

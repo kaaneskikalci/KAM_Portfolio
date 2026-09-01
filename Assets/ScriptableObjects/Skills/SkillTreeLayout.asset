@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32993f8dbe8159f47ae3149116efd3e1, type: 3}
+  m_Name: SkillTreeLayout
+  m_EditorClassIdentifier: Assembly-CSharp::KAM.Progression.SkillTreeData
+  treeName: Kam's Skill Tree
+  allSkills:
+  - {fileID: 11400000, guid: 2dc7b0c5d9096dd4980c84f51e1b16c3, type: 2}
+  - {fileID: 11400000, guid: 636db7077c4253048a8717b491c702d6, type: 2}
+  - {fileID: 11400000, guid: c598c60a1c6236447a7efb64b67ee324, type: 2}
+  - {fileID: 11400000, guid: f8273ab343fd55947a62b953a742321d, type: 2}
+  - {fileID: 11400000, guid: a7b878094413300489438379236af68b, type: 2}
+  - {fileID: 11400000, guid: d9f154fcd8c41984a9fb101dd3f150ff, type: 2}
+  - {fileID: 11400000, guid: 9927473d10137df409336227cef73949, type: 2}
+  - {fileID: 11400000, guid: 3bd1aabe719e5994f8ec75b2ff8d68c5, type: 2}
+  - {fileID: 11400000, guid: 44793e0ed0d3a084981aa0d1009668a0, type: 2}
+  - {fileID: 11400000, guid: 6d522137e0474974198026324d01ddd0, type: 2}

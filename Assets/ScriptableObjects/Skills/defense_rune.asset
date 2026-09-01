@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd80cd6bcc6a7249a76ecb90215621f, type: 3}
+  m_Name: defense_rune
+  m_EditorClassIdentifier: Assembly-CSharp::KAM.Progression.SkillNode
+  skillId: defense_rune
+  skillName: Defense Rune
+  description: Timed hit during enemy attacks reduces incoming damage by 30%.
+  icon: {fileID: 0}
+  category: 0
+  spiritFragmentCost: 40
+  prerequisites: []
+  hasBranches: 1
+  branchA:
+    branchName: Reflection
+    description: Reflect a portion of blocked damage back to attacker
+    icon: {fileID: 0}
+    effectType: 9
+    effectValue: 1
+  branchB:
+    branchName: Perfect Timing
+    description: Tighter 0.25s window for 60% damage reduction
+    icon: {fileID: 0}
+    effectType: 10
+    effectValue: 0.6
+  effectType: 8
+  effectValue: 0.3
+  secondaryValue: 0
+  tier: 0
+  uiPosition: {x: 0, y: 0}
