@@ -9,7 +9,7 @@ Five of us made it across two semesters. **I was the only developer on the team*
 every gameplay system in this repository is mine, alongside shared design work on the
 game itself. Art, narrative and audio were done by the rest of the team.
 
-- **Case study:** https://kaan-portfolio-three.vercel.app/dev/kam
+- **Case study:** https://kaaneskikalci.com/dev/kam
 - **Play it:** https://kaaneskikalci.itch.io/kam
 
 ---
