@@ -7,7 +7,8 @@ namespace KAM.Combat.TimedHit
     /// <summary>
     /// Core controller for the Timed Hit (Rune) system.
     /// Manages timing windows, validates player input, and calculates damage bonuses.
-    /// Based on GDD 1.7.5: Player presses the correct direction within a 0.5s window for +30% damage.
+    /// Based on GDD 1.7.5: Player presses the correct direction within the timing window for +30% damage.
+    /// The window length is set in TimedHitConfig.asset (hitWindowDuration, currently 1.0 s).
     /// </summary>
     public class TimedHitController : MonoBehaviour
     {

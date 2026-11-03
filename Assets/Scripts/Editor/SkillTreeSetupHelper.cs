@@ -72,7 +72,7 @@ namespace KAM.Editor
                 null, null, SkillEffectType.None, 0);
 
             var skill8 = CreateSkillNode("echo_ancestors", "Echo of Ancestors",
-                "Skip action to apply +15% damage echo (bleed) on target for 3 turns.",
+                "Skip action to apply +15% damage echo (bleed) to all enemies for 3 turns.",
                 SkillCategory.Combat, 50, SkillEffectType.EchoOfAncestors, 0.15f, 3f, 2,
                 false, null, null, SkillEffectType.None, 0,
                 null, null, SkillEffectType.None, 0);
