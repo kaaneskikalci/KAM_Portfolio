@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KAM.Progression.SkillNode
   skillId: echo_ancestors
   skillName: Echo of Ancestors
-  description: Skip action to apply +15% damage echo (bleed) on target for 3 turns.
+  description: Skip action to apply +15% damage echo (bleed) to all enemies for 3 turns.
   icon: {fileID: 0}
   category: 0
   spiritFragmentCost: 50
