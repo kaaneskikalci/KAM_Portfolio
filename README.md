@@ -5,34 +5,41 @@ Göktay, the shaman (*kam*) of his Oba, who enters the Spirit Realm to recover a
 taken by evil spirits. You sneak past or fight spirits in turn-based battles where
 timing matters as much as choice, then return to the village to grow stronger.
 
-**Genre:** turn-based roguelite RPG · **Platform:** PC — `TODO(Kaan): confirm platform(s)` ·
+**Genre:** turn-based roguelite RPG · **Platform:** Windows ·
 **Tech:** Unity 6 (6000.4), C#, URP, Input System, Cinemachine
 **Context:** graduation project, Istanbul Bilgi University · team of five · two semesters
 
 - **Full case study:** https://kaaneskikalci.com/dev/kam/
 - **Play it:** https://kaaneskikalci.itch.io/kam
 
+> This mirror is the 9 June 2026 graduation build. A post-graduation polish round
+> (Nov 2026: clearer combat feedback, progress-loss fixes, one visual style, a 3D start
+> menu) is described at https://kaaneskikalci.com/dev/kam; the itch.io page has both
+> builds.
+
 ---
 
 ## Media
 
-> `TODO(Kaan):` add media to `docs/media/` and replace these placeholders.
+Screenshots from the Nov 2026 polish build.
 
 | | |
 |---|---|
-| `TODO(Kaan): GIF — a timed-hit rune prompt landing a Perfect` | `TODO(Kaan): GIF — banking AP with Defend, then spending it` |
-| `TODO(Kaan): screenshot — the Oba hub and skill-tree altar` | `TODO(Kaan): screenshot — exploration, enemy vision cone` |
+| ![Timed-hit rune prompt with the Perfect zone marked](docs/media/16_qte.png) | ![Combat HUD with turn order, HP, AP and the Attack / Skills / Defend menu](docs/media/10_combat_hud.png) |
+| Timed-hit rune prompt with the Perfect zone marked | Combat HUD: turn order, HP, AP and actions |
+| ![Skill tree with the detail panel open](docs/media/03_skilltree_detail.png) | ![The Oba hub with a bonfire and the Spirit Fragments counter](docs/media/02_oba_hud.png) |
+| Skill tree with the detail panel open | The Oba hub |
 
 ## Design question and goals
 
 > **How do you keep turn-based combat tactically interesting and physically engaging,
-> while keeping the whole thing small enough for one developer to build and maintain
+> while keeping the whole thing small enough for one main developer to build and maintain
 > in two semesters?**
 
 Turn-based combat can turn into a menu you click through, and a roguelite makes that
 worse by repeating the same encounters run after run. The systems had to reward
-thinking *and* stay active moment to moment, without growing past what one developer
-could finish.
+thinking *and* stay active moment to moment, without growing past what one main
+developer could finish.
 
 **Goals**
 
@@ -42,7 +49,7 @@ could finish.
 3. **A framework that accepts new items, enemies, skills and interactables** without
    rewriting core systems.
 
-**Constraints:** one developer for all gameplay code across two semesters; a
+**Constraints:** one main developer for most of the gameplay code across two semesters; a
 five-person team whose art, narrative and audio work depended on those systems being
 ready; a scope that had to ship as a graduation project, not a wishlist.
 
@@ -117,9 +124,11 @@ Bonfires save and heal. Opened shortcuts and defeated bosses persist through a s
 
 ## My role
 
-**Game Designer / Systems Designer / Gameplay Programmer.** Team of five. **I was the
-only developer** — every gameplay system in this repository is mine — and I shared
-design work with the team. Teammates made art, narrative and audio.
+**Main Developer · Systems Design.** Team of five. I was the team's main developer: I
+wrote most of the gameplay code and designed most of the systems behind the core loop.
+A teammate contributed to the skill tree and to the UI and enemy audio scripts. I
+shared the game design with Kağan Samesti and Bora Kılıç. The rest of the team: Derin
+Su Kutaydın and Ethem Anıl Göl.
 
 The design decisions below were mine. One principle runs through them: no system
 should have to know how another one works.
@@ -139,17 +148,16 @@ should have to know how another one works.
   skill-tree altar share one detector and one prompt; each object only defines what it
   does when used.
 
-On the process side, we ran a 24-person playtest and worked through the action plan
-it produced (see below).
+On the process side, we ran a 24-person playtest; only part of the action plan it
+produced reached the final build (see below).
 
-> `TODO(Kaan):` GDD sections you wrote, project start/end dates, and teammates'
-> names/roles if you want to credit them.
+The game design document: [KAM GDD (PDF)](https://kaaneskikalci.com/files/kam-gdd.pdf).
 
 ## Status and lessons learned
 
 **Status.** The final build is a complete roguelite loop: hub, run, tactical
 turn-based combat, permanent progression, persistent world state and a
-save/death/respawn flow, built by one developer within the two-semester deadline.
+save/death/respawn flow, built by a single main developer within the two-semester deadline.
 Play it on [itch.io](https://kaaneskikalci.itch.io/kam).
 
 **Playtest — 19 May 2026, 24 participants.** We asked about pacing, the rune mechanic,
@@ -175,13 +183,19 @@ skill-tree build-crafting, balance and audiovisual feel.
   because the UI never explained why they died. Unclear feedback doesn't read as
   "confusing"; it reads as "unfair".
 
-**What changed.** The playtest produced a three-part plan, which we worked through:
+**What changed.** The playtest produced a three-part action plan; only part of it
+made it into the final build (9 June 2026):
 
-1. **UI/UX overhaul (top priority):** combat state (HP, AP, turn order) made
-   readable at a glance, and the skill-tree layout reworked.
-2. **Exploration-to-combat transition:** less transition lag and a smoother camera.
-3. **Encounter balance:** lower enemy health and less punishing Spirit Fragment
-   accumulation, so a run rewards entering combat instead of avoiding it.
+1. **UI/UX overhaul (top priority):** the plan was to make combat state (HP, AP,
+   turn order) readable at a glance and rework the skill-tree layout. It was still
+   on the to-do list on the build date; it was taken up later, in the Nov 2026
+   polish round.
+2. **Exploration-to-combat transition:** a fade now covers the scene transition.
+3. **Encounter balance:** Spirit Fragment loss on death became adjustable and chest
+   fragment rewards grew to 300–500.
+
+Alongside those, guards now stop music and result sounds from repeating. No playtest
+was run after these changes, so their effect is untested.
 
 Because timed hits, skill effects and interactions were modular, this meant changing
 presentation and tuning values, not rewriting combat.
