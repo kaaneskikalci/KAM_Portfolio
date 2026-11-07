@@ -148,8 +148,8 @@ should have to know how another one works.
   skill-tree altar share one detector and one prompt; each object only defines what it
   does when used.
 
-On the process side, we ran a 24-person playtest and worked through the action plan
-it produced (see below).
+On the process side, we ran a 24-person playtest; only part of the action plan it
+produced reached the final build (see below).
 
 The game design document: [KAM GDD (PDF)](https://kaaneskikalci.com/files/kam-gdd.pdf).
 
@@ -183,13 +183,19 @@ skill-tree build-crafting, balance and audiovisual feel.
   because the UI never explained why they died. Unclear feedback doesn't read as
   "confusing"; it reads as "unfair".
 
-**What changed.** The playtest produced a three-part plan, which we worked through:
+**What changed.** The playtest produced a three-part action plan; only part of it
+made it into the final build (9 June 2026):
 
-1. **UI/UX overhaul (top priority):** combat state (HP, AP, turn order) made
-   readable at a glance, and the skill-tree layout reworked.
-2. **Exploration-to-combat transition:** less transition lag and a smoother camera.
-3. **Encounter balance:** lower enemy health and less punishing Spirit Fragment
-   accumulation, so a run rewards entering combat instead of avoiding it.
+1. **UI/UX overhaul (top priority):** the plan was to make combat state (HP, AP,
+   turn order) readable at a glance and rework the skill-tree layout. It was still
+   on the to-do list on the build date; it was taken up later, in the Nov 2026
+   polish round.
+2. **Exploration-to-combat transition:** a fade now covers the scene transition.
+3. **Encounter balance:** Spirit Fragment loss on death became adjustable and chest
+   fragment rewards grew to 300–500.
+
+Alongside those, guards now stop music and result sounds from repeating. No playtest
+was run after these changes, so their effect is untested.
 
 Because timed hits, skill effects and interactions were modular, this meant changing
 presentation and tuning values, not rewriting combat.
